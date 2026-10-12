@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Paysage touristique du Cameroun</title>
+  <desc id="desc">Illustration de collines verdoyantes, de montagnes et d'une cascade sous un ciel lumineux.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b7e7dc"/><stop offset="1" stop-color="#f4e9c8"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bcece7"/><stop offset=".5" stop-color="#f4fffb"/><stop offset="1" stop-color="#76c8c0"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3c8a65"/><stop offset="1" stop-color="#174b3b"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1230" cy="170" r="76" fill="#f7c76b" opacity=".92"/>
+  <path d="M0 530 245 270 390 420 620 205 850 475 1075 265 1320 465 1505 300 1600 400V900H0Z" fill="#7ba99a" opacity=".7"/>
+  <path d="M0 605 260 370 430 510 660 315 880 560 1110 370 1320 535 1500 410 1600 500V900H0Z" fill="#477d69" opacity=".85"/>
+  <path d="M0 630Q250 470 470 615T900 605T1300 585T1600 610V900H0Z" fill="#347a55"/>
+  <path d="M0 730Q300 555 580 710T1080 685T1600 700V900H0Z" fill="url(#hill)"/>
+  <path d="M685 390 805 390 845 610 930 700 875 900H585L650 720 700 600Z" fill="#d2e9df" opacity=".85"/>
+  <path d="M730 390H770L790 610 840 695 815 900H665L700 720 720 610Z" fill="url(#water)"/>
+  <path d="M0 810Q220 730 390 790T740 800T1120 785T1600 805V900H0Z" fill="#173f34" opacity=".88"/>
+  <g fill="#174b3b"><path d="M170 715l45-130 45 130h-28l33 60h-100l33-60z"/><path d="M1300 695l50-150 50 150h-30l35 65h-110l35-65z"/><path d="M1430 760l38-110 38 110h-24l28 50h-84l28-50z"/></g>
+  <g fill="#f7e7b2" opacity=".75"><circle cx="260" cy="160" r="4"/><circle cx="330" cy="210" r="3"/><circle cx="1040" cy="155" r="4"/><circle cx="980" cy="230" r="3"/></g>
+</svg>
