@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import hero from "../assets/image/hero-cascade.jpg";
 import { ref, computed, onMounted, type Directive } from "vue";
 import { useFavorites } from "../composables/useFavorites";
 import { useAuth } from "../composables/useAuth";
@@ -8,7 +7,7 @@ import { siteApi } from "../api/siteApi";
 import main from "../assets/image/main.gif";
 
 const { isFavorite, toggleFavorite } = useFavorites();
-const { isLoggedIn, currentUser } = useAuth();
+const { isLoggedIn } = useAuth();
 
 // =====================================================
 // Directive d'animation au scroll (IntersectionObserver)
