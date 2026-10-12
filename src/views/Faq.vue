@@ -117,7 +117,6 @@ const categories: FaqCategory[] = [
 
 const activeCategory = ref(categories[0].id);
 const searchQuery = ref("");
-const openItems = ref<Set<string>>(new Set());
 
 // Résultats filtrés par la recherche, tous groupes confondus
 const searchResults = computed<{ category: string; item: FaqItem }[]>(() => {
