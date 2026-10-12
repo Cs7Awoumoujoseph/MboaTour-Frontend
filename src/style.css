@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --color-mboa-green:#1B3D2A; 
+    --color-mboa-green-light:#2A5A3F;
+    --color-mboa-gold:#D4A017;
+    --color-mboa-red:#c0392B;
+    --color-mboa-belge:#F5E9D6;
+    --color-mboa-cream:#FBF6EC;
+
+    /* Surfaces neutres partagées par toutes les pages (clair / sombre) */
+    --color-surface-page: #FBF6EC;
+    --color-surface-page-dark: #0B1220;
+    --color-surface-card: #FFFFFF;
+    --color-surface-card-dark: #111827;
+    --color-surface-alt: #F5E9D6;
+    --color-surface-alt-dark: #1A2332;
+    --color-surface-border: #E5E0D5;
+    --color-surface-border-dark: #29334A;
+
+    --color-text-heading: #1A1A1A;
+    --color-text-heading-dark: #F3F4F6;
+    --color-text-body: #4B5563;
+    --color-text-body-dark: #C7CDD6;
+    --color-text-muted: #6B7280;
+    --color-text-muted-dark: #8A93A3;
+}
+
+html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color-scheme: light;
+}
+
+html.dark {
+    color-scheme: dark;
+}
+
+* {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 0.2s;
+}
+
+body {
+    background-color: var(--color-surface-page);
+    color: var(--color-text-body);
+}
+
+.dark body {
+    background-color: var(--color-surface-page-dark);
+    color: var(--color-text-body-dark);
+}
+
+/* Sélection de texte : toujours lisible, quel que soit le mode */
+::selection {
+    background-color: var(--color-mboa-gold);
+    color: #1A1A1A;
+}
+.dark ::selection {
+    background-color: var(--color-mboa-gold);
+    color: #1A1A1A;
+}
+
+/* Scrollbar sobre en mode sombre */
+.dark ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.dark ::-webkit-scrollbar-track {
+    background: var(--color-surface-page-dark);
+}
+.dark ::-webkit-scrollbar-thumb {
+    background-color: #2A3550;
+    border-radius: 999px;
+}
+
+/* Champs de formulaire : lisibles en mode sombre par défaut */
+.dark input,
+.dark textarea,
+.dark select {
+    background-color: #1A2332;
+    border-color: #354056;
+    color: #E5E7EB;
+}
+.dark input::placeholder,
+.dark textarea::placeholder {
+    color: #7A8497;
+}
+
+/* Classes utilitaires "sémantiques" : à utiliser plutôt que d'empiler
+   des couleurs claires/sombres ad-hoc sur chaque élément. Garantit un
+   rendu uniforme et professionnel sur toute l'application. */
+.surface-page {
+    background-color: var(--color-surface-page);
+}
+.dark .surface-page {
+    background-color: var(--color-surface-page-dark);
+}
+
+.surface-card {
+    background-color: var(--color-surface-card);
+    border-color: var(--color-surface-border);
+}
+.dark .surface-card {
+    background-color: var(--color-surface-card-dark);
+    border-color: var(--color-surface-border-dark);
+}
+
+.surface-alt {
+    background-color: var(--color-surface-alt);
+}
+.dark .surface-alt {
+    background-color: var(--color-surface-alt-dark);
+}
+
+.text-heading {
+    color: var(--color-text-heading);
+}
+.dark .text-heading {
+    color: var(--color-text-heading-dark);
+}
+
+.text-body {
+    color: var(--color-text-body);
+}
+.dark .text-body {
+    color: var(--color-text-body-dark);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+.dark .text-muted {
+    color: var(--color-text-muted-dark);
+}
