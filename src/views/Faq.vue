@@ -119,14 +119,6 @@ const activeCategory = ref(categories[0].id);
 const searchQuery = ref("");
 const openItems = ref<Set<string>>(new Set());
 
-function toggleItem(key: string) {
-  if (openItems.value.has(key)) {
-    openItems.value.delete(key);
-  } else {
-    openItems.value.add(key);
-  }
-}
-
 // Résultats filtrés par la recherche, tous groupes confondus
 const searchResults = computed<{ category: string; item: FaqItem }[]>(() => {
   const q = searchQuery.value.trim().toLowerCase();
@@ -343,7 +335,7 @@ const activeCategoryData = computed(
         <div class="md:col-span-3">
           <div v-reveal :key="activeCategoryData.id" class="space-y-3">
             <details
-              v-for="(item, i) in activeCategoryData.items"
+              v-for="item in activeCategoryData.items"
               :key="item.q"
               class="group bg-white rounded-xl p-5 shadow-sm dark:bg-gray-900"
             >
