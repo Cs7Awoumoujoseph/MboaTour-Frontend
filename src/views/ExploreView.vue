@@ -9,7 +9,7 @@ import { useFavorites } from "../composables/useFavorites";
 import { useAuth } from "../composables/useAuth";
 
 const { isFavorite, toggleFavorite } = useFavorites();
-const { isLoggedIn, currentUser } = useAuth();
+const { isLoggedIn } = useAuth();
 
 const sites = ref<Destination[]>([]);
 
