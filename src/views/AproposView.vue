@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import heroAbout from "../assets/image/Hero.jpg";
+import heroAbout from "../assets/hero-landscape.svg";
 import type { Directive } from "vue";
 
 // Directive d'animation au scroll — identique à celle de HomeView.vue
