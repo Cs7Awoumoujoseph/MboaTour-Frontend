@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from "vue";
+import heroLandscape from "../assets/hero-landscape.svg";
 import { siteApi } from "../api/siteApi";
 import type { Destination } from "../types/index";
 import { categorieApi } from "../api/categorieApi";
@@ -268,7 +269,7 @@ onMounted(() => {
         class="absolute inset-0 bg-gradient-to-r from-mboa-green/40 via-black/20 to-transparent"
       ></div>
       <img
-        src="/src/assets/image/expore.png"
+         :src="heroLandscape"
         alt="Sites touristiques du Cameroun"
         class="w-full h-[280px] object-cover"
       />
