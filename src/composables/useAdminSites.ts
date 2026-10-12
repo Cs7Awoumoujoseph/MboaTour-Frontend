@@ -1,6 +1,6 @@
 import { ref, computed } from 'vue'
 import { siteApi } from '../api/siteApi'
-import type { Site, SiteFormData } from '../types/index.ts'
+import type { Site } from '../types/index.ts'
 import { currentUser } from './useAuth'
 
 
