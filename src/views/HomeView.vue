@@ -4,7 +4,7 @@ import { useFavorites } from "../composables/useFavorites";
 import { useAuth } from "../composables/useAuth";
 import type { Destination } from "../types";
 import { siteApi } from "../api/siteApi";
-import main from "../assets/image/main.gif";
+import main from "../assets/hero-landscape.svg";
 
 const { isFavorite, toggleFavorite } = useFavorites();
 const { isLoggedIn } = useAuth();
