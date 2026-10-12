@@ -65,7 +65,7 @@ async function loadSites() {
   }
 }
 export function useFavorites() {
-  const { currentUser, isLoggedIn } = useAuth();
+  const { currentUser } = useAuth();
 
   if (!sitesLoaded.value) {
     sitesLoaded.value = true;
