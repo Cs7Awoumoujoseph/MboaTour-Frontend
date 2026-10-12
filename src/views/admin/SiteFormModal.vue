@@ -9,7 +9,7 @@ import { currentUser } from "../../composables/useAuth";
 const { createSite, editSite, addSiteImage, removeSiteImage, setMainImage } =
   useAdminSites();
 
-const existingImages = ref<{ id: number; url: string }[]>([]);
+const existingImages = ref<{ id: number; url: string; principal?: boolean }[]>([]);
 
 const { isOpen, mode, editingSite, close } = useSiteFormModal();
 
