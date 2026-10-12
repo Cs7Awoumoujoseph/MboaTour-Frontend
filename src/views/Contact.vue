@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import heroContact from "../assets/image/Hero.jpg";
+import heroContact from "../assets/hero-landscape.svg";
 import { ref, type Directive } from "vue";
 
 // Directive d'animation au scroll — identique aux autres pages
